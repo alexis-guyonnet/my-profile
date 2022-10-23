@@ -1,0 +1,128 @@
+/* Colors and fonts */
+
+body {
+  background:  rgb(245, 249, 252);
+  color: #425466;
+  font-family: 'Lora', serif;
+  font-size:  17px;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #001180;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #001180;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #635bff;
+  font-weight: 700;
+}
+a:hover {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-weight: 700;
+ }
+
+
+ /* Customer design with class */
+
+.container {
+  width:  900px;
+  margin:  40px auto;
+}
+
+@media (max-width: 1200px) {
+   /* For a screen < 1200px, this CSS will be read */
+  .container {
+    width: 800px;
+  }
+}
+@media (max-width: 960px) {
+   /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.card-white {
+  background-color:  white;
+  padding: 30px;
+  box-shadow:  0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: justify;
+}
+.card-white h1 {
+  text-align: center;
+}
+.card-white h2 {
+  text-align: center;
+}
+.img-circle {
+  display: block;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-blue{
+  display: block;
+  background-color: #635bff;
+  color: white;
+  width:  100px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn-blue:hover {
+  background-color: #0008C1;
+  color: white;
+}
+.list-inline{
+  list-style: none;
+  padding-left:  0px;
+}
+.list-inline li {
+  display: block-inline;
+  padding: 10px;
+  text-align: center;
+}
+.list-inline i {
+  font-size: 50px;
+  color: #635bff;
+}
+.list-inline i:hover {
+  color: #0008C1;
+}
+
+/* Design adjustments using id */
+
+#introduction p {
+  margin-bottom: 40px;
+}
