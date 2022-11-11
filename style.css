@@ -39,35 +39,101 @@ a:hover {
 
  /* Customer design with class */
 
-.container {
-  width:  900px;
-  margin:  40px auto;
+.sidebar {
+  height: 100%;
+  width:160px;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+  overflow: auto;
 }
 
-@media (max-width: 1200px) {
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.page-content {
+  position: relative;
+  margin-left: 160px;
+}
+
+.container {
+  width:  900px;
+  margin:  20px auto;
+}
+
+@media screen and (max-width: 1200px) {
    /* For a screen < 1200px, this CSS will be read */
-  .container {
+  div.container {
+    margin-left:10px auto;
     width: 800px;
   }
 }
-@media (max-width: 960px) {
+@media screen and (max-width: 1020px) {
    /* For a screen < 960px, this CSS will be read */
-  .container {
+   .sidebar {
+    width: 100%;
+    height: auto;
+    position:relative;
+  }
+  .sidebar a {float: left;}
+  div.page-content {
+    margin-left:0;
+  }
+  div.container {
+    margin-left:10px auto;
     width: 700px;
   }
 }
-@media (max-width: 720px) {
+@media screen and (max-width: 780px) {
   /* For a screen < 720px, this CSS will be read */
-  .container {
+  .sidebar {
+    width: 100%;
+    height:auto;
+    position:relative;
+  }
+  .sidebar a {float: left;}
+  div.page-content {
+    margin-left:0;
+  }
+  div.container {
+    margin-left:10px auto;
     width: 500px;
   }
 }
-@media (max-width: 540px) {
+@media screen and (max-width: 580px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
+  .sidebar {
+    width: 100%;
+    height:auto;
+    position:relative;
+  }
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  div.page-content {
+    margin-left:0;
+  }
+  div.container {
+    margin-left:5px auto;
+    width: 400px;
   }
 }
+
 
 .card-white {
   background-color:  white;
